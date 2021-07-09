@@ -1,0 +1,19 @@
+<%= notice %>
+
+<h2>Book detail</h2>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        user画像
+        user名前
+      </td>
+      <td><%= @book.title %></td>
+      <td><%= @book.body %></td>
+      <td>Edit</td>
+      <td><%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "本当に消しますか？" %></td>
+    </tr>
+  </tbody>
+</table>
+
+
