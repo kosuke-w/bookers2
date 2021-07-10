@@ -1,2 +1,22 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h2>Books</h2>
+<table>
+  <thead>
+    <th></th>
+    <th>Title</th>
+    <th>Opinion</th>
+  </thead>
+  <tbody>
+    <% @book.each do |book| %>
+      <tr>
+        <td>user画像</td>
+        <td>
+          <%= link_to book_path(book.id) do %>
+            <%= book.title %>
+          <% end %>
+        </td>
+        <td><%= book.body %></td>
+      </tr>
+    <% end %>
+    <%= paginate @book %>
+  </tbody>
+</table>
