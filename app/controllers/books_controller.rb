@@ -1,8 +1,5 @@
 class BooksController < ApplicationController
 
-  def new
-  end
-
   def create
     @book = Book.new(book_params)
     @book.user_id = current_user.id
@@ -14,7 +11,8 @@ class BooksController < ApplicationController
   def index
     @books = Book.all
     @books = Book.page(params[:page]).reverse_order
-    @book_new = Book.new
+    @book = Book.new
+    @book.user_id = current_user.id
   end
 
   def show

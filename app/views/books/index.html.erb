@@ -2,31 +2,7 @@
   <div>
     <div>
       <div>
-        <h2>User info</h2>
-        user画像
-        <table>
-          <tbody>
-            <tr></tr>
-            <tr>
-              <th>name</th>
-              <th></th>
-            </tr>
-            <tr>
-              <th>introduction</th>
-              <th></th>
-            </tr>
-          </tbody>
-        </table>
-        <div>bottun</div>
-
-        <h2>New book</h2>
-        <%= form_with model: @book_new, url:'/books', local:true do |f| %>
-          <h4>Title</h4>
-          <%= f.text_field :title %>
-          <h4>Opinion</h4>
-          <%= f.text_area :body %>
-          <%= f.submit 'Create Book' %>
-        <% end %>
+        <%= render 'books/info', book: @book %>
       </div>
 
       <div>
