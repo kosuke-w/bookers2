@@ -14,3 +14,65 @@
  *= require_self
  */
  @import "bootstrap";
+header {
+    margin-bottom: 15px;
+}
+
+ul {
+    display: inline-flex;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+li {
+    margin: auto;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+ul li .fas {
+    padding-right: 1rem;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div.field, div.actions {
+    margin-bottom: 10px;
+}
+
+.message_type {
+    color: green;
+}
