@@ -6,7 +6,6 @@ class BooksController < ApplicationController
     if @book.save
       redirect_to book_path(@book.id)
     else
-      @books = Book.all
       @books = Book.page(params[:page]).reverse_order
       render :index
     end
@@ -23,7 +22,6 @@ class BooksController < ApplicationController
     @pbook = Book.new
     @pbook.user_id = current_user.id
     @book = Book.find(params[:id])
-    @book.user_id = current_user.id
   end
 
   def edit

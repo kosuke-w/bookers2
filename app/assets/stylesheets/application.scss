@@ -18,7 +18,7 @@ header {
     margin-bottom: 15px;
 }
 
-ul {
+header nav div div ul{
     display: inline-flex;
     margin-bottom: 0;
     list-style: none;
@@ -55,6 +55,18 @@ ul li .fas {
     border-color: #28a745;
 }
 
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
 .btn-primary {
     color: #fff;
     background-color: #007bff;
@@ -75,4 +87,8 @@ div.field, div.actions {
 
 .message_type {
     color: green;
+}
+
+#error_explanation {
+    color: red;
 }
