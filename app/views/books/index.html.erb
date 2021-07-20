@@ -3,7 +3,7 @@
     <%= render "books/error_message", book: @book %>
     <div class="row">
       <div class="col-md-3">
-        <%= render 'books/info', book: @book %>
+        <%= render 'books/info', {book: @book, book_new: @book} %>
       </div>
 
       <div class="col-md-8 offset-md-1">
